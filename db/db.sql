@@ -14,6 +14,12 @@ CREATE TABLE posts (
     user_id bigint not null references USERS(id)
 );
 
+CREATE TABLE fallowers {
+    id SERIAL PRIMARY KEY,
+    user_id bigint not null references USERS(id),
+    fallowers_id bigint not null references USERS(id)
+};
+
 --POSTGRES
 --CREATE DATABASE quarkus-social;
 --
