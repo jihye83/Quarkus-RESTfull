@@ -20,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 //determinando a order dos testes
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class UserResourceTest {
+    //definindo o endpoint /users como apiURL
     @TestHTTPResource("/users")
     URL apiURL;
     @Test
